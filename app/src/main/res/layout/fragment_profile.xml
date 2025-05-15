@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+
+        <ImageView
+            android:id="@+id/ivTeam1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ega"
+            android:contentDescription="Team Image 1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvTeamName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ghazy Abyu Pandega"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvStadiumName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project Leader"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivTeam2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fawwaz"
+            android:contentDescription="Team Image 2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvTeamName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fawwaz Labib"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvStadiumName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Collaborator"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
